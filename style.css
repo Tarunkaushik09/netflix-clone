@@ -591,6 +591,14 @@ a,
 }
 
 /* Responsive */
+/* Desktop */
+@media (max-width: 1200px) {
+    .reason-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
 @media (max-width: 768px) {
     nav {
         width: 92%;
@@ -601,7 +609,7 @@ a,
     }
 
     .hero h1 {
-        font-size: 40px;
+        font-size: 64px;
     }
     
     .hero h3 {
@@ -621,9 +629,7 @@ a,
     .hero-form input, .hero-form button {
         width: 95%;
     }
-}
 
-@media (max-width: 768px) {
     .section-title,
     .slider {
         width: 92%;
@@ -654,15 +660,7 @@ a,
         height: 90px;
         font-size: 18px;
     }
-}
 
-@media (max-width: 1200px) {
-    .reason-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
     .reasons h2 {
         width: 92%;
         font-size: 28px;
@@ -690,34 +688,7 @@ a,
     .reason-card i {
         font-size: 48px;
     }
-}
 
-@media (max-width: 900px) {
-    .footer-links {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .membership {
-        width: 92%;
-    }
-    
-    .membership-form {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .membership-form input,
-    .membership-form button {
-        width: 100%;
-    }
-    
-    .faq h2,
-    .faq details {
-        width: 92%;
-    }
-}
-
-@media (max-width: 768px) {
     .faq h2 {
         font-size: 28px;
     }
@@ -752,5 +723,389 @@ a,
     
     .membership p {
         font-size: 16px;
+    }
+}
+
+
+/* Tablet */
+@media (max-width: 900px) {
+
+    nav {
+        width: 92%;
+        height: 75px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .nav-right {
+        gap: 8px;
+    }
+
+    .language {
+        padding: 0 12px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .signin {
+        height: 36px;
+        padding: 0 14px;
+        font-size: 14px;
+    }
+
+    .hero {
+        height: calc(100vh - 75px);
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        max-width: 650px;
+    }
+
+    .hero h3 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .hero-form input {
+        width: 350px;
+    }
+
+    .hero-form button {
+        width: 250px;
+        font-size: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .offer-bar {
+        height: 44px;
+        padding: 0 10px;
+        font-size: 13px;
+        text-align: center;
+        gap: 7px;
+    }
+
+    .offer-bar i {
+        font-size: 15px;
+    }
+
+    main {
+        min-height: 650px;
+        height: auto;
+    }
+
+    nav {
+        width: 92%;
+        height: 70px;
+    }
+
+    .logo img {
+        width: 105px;
+    }
+
+    .nav-right {
+        gap: 6px;
+    }
+
+    .language {
+        width: 40px;
+        padding: 0;
+        font-size: 0;
+    }
+
+    .language i {
+        font-size: 18px;
+    }
+
+    .signin {
+        height: 34px;
+        padding: 0 12px;
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 535px;
+        height: auto;
+        padding: 30px 16px 50px;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        width: 100%;
+        max-width: 390px;
+        font-size: 34px;
+        line-height: 1.12;
+        font-weight: 800;
+    }
+
+    .hero h3 {
+        margin-top: 16px;
+        font-size: 19px;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        width: 100%;
+        max-width: 360px;
+        margin-top: 22px;
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .hero-form {
+        width: 100%;
+        max-width: 380px;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .hero-form input,
+    .hero-form button {
+        width: 100%;
+        height: 52px;
+    }
+
+    .hero-form input {
+        font-size: 15px;
+    }
+
+    .hero-form button {
+        font-size: 19px;
+    }
+
+    .hero small {
+        margin-top: 14px;
+        font-size: 12px;
+    }
+
+    /* Trending */
+    .trending-section {
+        padding: 45px 0;
+    }
+
+    .section-title,
+    .slider {
+        width: 92%;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .card-box1 {
+        gap: 14px;
+        padding: 10px 38px;
+    }
+
+    .card {
+        min-width: 130px;
+    }
+
+    .card img {
+        width: 130px;
+        height: 185px;
+        border-radius: 7px;
+    }
+
+    .card span {
+        font-size: 65px;
+        left: -10px;
+        bottom: -10px;
+        -webkit-text-stroke: 1.5px #fff;
+    }
+
+    .slider-btn {
+        width: 34px;
+        height: 80px;
+        font-size: 16px;
+        border-radius: 7px;
+    }
+
+    /* Reasons */
+    .reasons {
+        padding: 45px 0;
+    }
+
+    .reasons h2 {
+        width: 92%;
+        font-size: 26px;
+        margin-bottom: 22px;
+    }
+
+    .reason-container {
+        width: 92%;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .reason-card {
+        min-height: 210px;
+        padding: 22px;
+        border-radius: 15px;
+    }
+
+    .reason-content h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .reason-content p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .reason-card i {
+        right: 20px;
+        bottom: 18px;
+        font-size: 45px;
+    }
+
+    /* FAQ */
+    .faq {
+        padding: 45px 0;
+    }
+
+    .faq h2 {
+        width: 92%;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .faq details {
+        width: 92%;
+        margin-bottom: 7px;
+    }
+
+    .faq summary {
+        font-size: 18px;
+        padding: 20px 45px 20px 18px;
+    }
+
+    .faq summary::after {
+        right: 18px;
+        font-size: 27px;
+    }
+
+    .faq p {
+        font-size: 15px;
+        line-height: 1.5;
+        padding: 0 18px 18px;
+    }
+
+    /* Membership */
+    .membership {
+        width: 92%;
+        margin: 45px auto;
+    }
+
+    .membership p {
+        font-size: 15px;
+        line-height: 1.4;
+        margin-bottom: 18px;
+    }
+
+    .membership-form {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .membership-form input,
+    .membership-form button {
+        width: 100%;
+        height: 52px;
+    }
+
+    .membership-form input {
+        font-size: 15px;
+    }
+
+    .membership-form button {
+        font-size: 19px;
+    }
+
+    /* Footer */
+    .footer {
+        width: 92%;
+        margin: 55px auto 30px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 13px;
+    }
+
+    .footer-links a {
+        font-size: 13px;
+    }
+
+    .footer-note {
+        font-size: 11px;
+    }
+}
+
+/* Very Small Phones */
+@media (max-width: 380px) {
+
+    .offer-bar {
+        font-size: 12px;
+    }
+
+    nav {
+        height: 65px;
+    }
+
+    .logo img {
+        width: 95px;
+    }
+
+    .signin {
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero h3 {
+        font-size: 17px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero-form button {
+        font-size: 17px;
+    }
+
+    .card {
+        min-width: 120px;
+    }
+
+    .card img {
+        width: 120px;
+        height: 170px;
     }
 }
